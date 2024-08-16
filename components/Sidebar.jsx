@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import "./css/sidebar.css";
 import { IoMdClose } from "react-icons/io";
@@ -7,25 +7,22 @@ const Sidebar = ({ isOpen, onClose }) => {
   const sidebarRef = useRef(null);
 
   useEffect(() => {
-    const sidebar = sidebarRef.current;
-    let lastScrollTop = 0;
-
     const handleScroll = () => {
-      const st = sidebar.scrollTop;
-      if (st > lastScrollTop) {
-        sidebar.classList.add('scrolling-down');
-        sidebar.classList.remove('scrolling-up');
-      } else {
-        sidebar.classList.add('scrolling-up');
-        sidebar.classList.remove('scrolling-down');
+      if (sidebarRef.current) {
+        const { scrollTop } = sidebarRef.current;
+        sidebarRef.current.classList.toggle('scrolled', scrollTop > 0);
       }
-      lastScrollTop = st <= 0 ? 0 : st;
     };
 
-    sidebar.addEventListener('scroll', handleScroll, { passive: true });
+    const sidebar = sidebarRef.current;
+    if (sidebar) {
+      sidebar.addEventListener('scroll', handleScroll);
+    }
 
     return () => {
-      sidebar.removeEventListener('scroll', handleScroll);
+      if (sidebar) {
+        sidebar.removeEventListener('scroll', handleScroll);
+      }
     };
   }, []);
 

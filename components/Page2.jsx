@@ -1,5 +1,6 @@
 import React from "react";
 import { FaArrowRight } from "react-icons/fa";
+import "../Style.css"
 
 const Page2 = () => {
   return (
