@@ -1,0 +1,139 @@
+/* Global Styles */
+.page3 {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  /* Section 3 Specific Styles */
+  .page3 h1 {
+    font-size: 2rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+  }
+  
+  .founder-sec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .founder-sec img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+  }
+  
+  .founder-sec-in {
+    margin-bottom: 1rem;
+  }
+  
+  .hrLine {
+    width: 50%;
+    height: 1px;
+    background-color: #000;
+    margin: 1rem auto;
+  }
+  
+  .page3-sec3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  .page3-sec3 img {
+    width: 80%;
+    max-width: 300px;
+    margin-bottom: 1rem;
+  }
+  
+  .page3-sec3-in {
+    margin-top: 1rem;
+  }
+  
+  .page3-sec3-in h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .page3-sec3-in p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .page3-sec3-in button {
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+  }
+  
+  .page3-sec3-in button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Section 4 Specific Styles */
+  .page4 {
+    padding: 2rem;
+  }
+  
+  .page4 h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .page4 h1 span {
+    color: #007bff;
+  }
+  
+  .page4 img {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  /* Responsive Styles */
+  @media (min-width: 768px) {
+    .page3 {
+      padding: 3rem 5rem;
+    }
+  
+    .founder-sec {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      text-align: left;
+    }
+  
+    .founder-sec img {
+      margin-bottom: 0;
+    }
+  
+    .hrLine {
+      margin: 0;
+    }
+  
+    .page3-sec3 {
+      flex-direction: row;
+      text-align: left;
+    }
+  
+    .page3-sec3 img {
+      margin-bottom: 0;
+      width: 50%;
+    }
+  
+    .page3-sec3-in {
+      margin-left: 2rem
+  

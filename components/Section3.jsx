@@ -1,6 +1,6 @@
 import React from 'react'
 import { FaArrowRight } from "react-icons/fa";
-
+import "../Style.css"
 const Section3 = () => {
   return (
     <div className='page3'>

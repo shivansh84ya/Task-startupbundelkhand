@@ -5,6 +5,13 @@
     color: #ffffff;
     background-color: #1a1a1a;
   }
+
+  .landing-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px; 
+ }
   
   .category-grid {
     display: grid;
