@@ -8,7 +8,7 @@
   .page3 h1 {
     font-size: 2rem;
     line-height: 1.5;
-    margin-bottom: 2rem;
+    /* margin-bottom: 2rem; */
   }
   
   .founder-sec {
@@ -23,11 +23,11 @@
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
   }
   
   .founder-sec-in {
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
   }
   
   .hrLine {
@@ -48,7 +48,7 @@
   .page3-sec3 img {
     width: 80%;
     max-width: 300px;
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
   }
   
   .page3-sec3-in {
@@ -57,12 +57,12 @@
   
   .page3-sec3-in h1 {
     font-size: 1.5rem;
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
   }
   
   .page3-sec3-in p {
     font-size: 1rem;
-    margin-bottom: 1.5rem;
+    /* margin-bottom: 1.5rem; */
   }
   
   .page3-sec3-in button {
@@ -89,7 +89,7 @@
   
   .page4 h1 {
     font-size: 2rem;
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
   }
   
   .page4 h1 span {
@@ -106,7 +106,7 @@
   /* Responsive Styles */
   @media (min-width: 768px) {
     .page3 {
-      padding: 3rem 5rem;
+      /* padding: 3rem 5rem; */
     }
   
     .founder-sec {
@@ -136,4 +136,6 @@
   
     .page3-sec3-in {
       margin-left: 2rem
-  
+    }
+
+  }

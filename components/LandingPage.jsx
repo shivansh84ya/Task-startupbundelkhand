@@ -23,14 +23,14 @@ const LandingPage = () => {
      </div>
        <section className="category-grid">
         {/* Generate grid items dynamically */}
-        {['Category 1', 'Category 2', 'Category 3', 'Category 4', 'Category 5'].map((category, index) => (
+        {['Category 1', 'Category 2', 'Category 3', 'Category 4', 'Category 5', 'Category 6'].map((category, index) => (
           <div key={index} className="category-item">
             <i className="category-icon"></i>
             <span>{category}</span>
           </div>
         ))}
       </section>
-
+{/* 
       <section className="testimonial">
         <div className="quote-marks">"</div>
         <p className="quote-text">Insert a relevant testimonial quote here.</p>
@@ -42,7 +42,7 @@ const LandingPage = () => {
           </div>
           <img src="company-logo.png" alt="Company Logo" className="company-logo" />
         </div>
-      </section>
+      </section> */}
 
       <section className="feature">
         <div className="feature-image">
@@ -50,7 +50,7 @@ const LandingPage = () => {
           <div className="placeholder-graphic"></div>
         </div>
         <div className="feature-content">
-          <h2>Feature Headline</h2>
+          <h1>Feature Headline</h1>
           <p>Description of the feature and its benefits.</p>
           <button className="cta-button">Call to Action</button>
         </div>

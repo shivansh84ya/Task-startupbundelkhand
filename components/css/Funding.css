@@ -1,111 +1,173 @@
-
 /* Funding Section */
-/* Container for the entire section */
 .funding-section {
-    background-color: #1b2a38;
-    color: white;
-    padding: 40px 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  /* Header styles */
-  .header h1 {
-    text-align: center;
-    color: #b0c9dd;
-  }
-  
-  /* Funding options section */
+  background-color: #1b2a38;
+  color: white;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header styles */
+.header h1 {
+  text-align: center;
+  color: #b0c9dd;
+}
+
+/* Funding options section */
+.funding-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.funding-text {
+  flex: 1;
+  padding: 20px;
+}
+
+.funding-text h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.funding-text p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.funding-button {
+  background-color: #d15443;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.funding-button:hover {
+  background-color: #e16957;
+}
+
+.funding-cards {
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.card {
+  background-color: #223647;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  width: 10%;
+  font-size: 1rem;
+}
+
+/* Recently funded section */
+.recently-funded {
+  margin-top: 40px;
+}
+
+.recently-funded h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.funded-items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.funded-item {
+  background-color: #2c3e50;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 10px;
+  text-align: center;
+  width: 100%;
+  height: auto;
+}
+
+.funded-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.funded-item p {
+  margin: 5px 0;
+  font-size: 1rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
   .funding-options {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 20px;
+      flex-direction: column;
+      align-items: center;
   }
-  
-  .funding-text {
-    flex: 1;
-    padding: 20px;
-  }
-  
-  .funding-text h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-  }
-  
-  .funding-text p {
-    font-size: 1.1rem;
-    margin-bottom: 20px;
-  }
-  
-  .funding-button {
-    background-color: #d15443;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1.2rem;
-    cursor: pointer;
-    border-radius: 5px;
-  }
-  
-  .funding-button:hover {
-    background-color: #e16957;
-  }
-  
+
   .funding-cards {
-    display: flex;
-    flex: 1;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 20px;
+      justify-content: center;
   }
-  
+
+  .funding-text {
+      padding: 10px;
+  }
+
+  .funding-text h2 {
+      font-size: 1.8rem;
+  }
+
+  .funding-text p {
+      font-size: 1rem;
+  }
+
   .card {
-    background-color: #223647;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 10px;
-    text-align: center;
-    width: 200px;
-    font-size: 1rem;
+      width: 20%;
+      margin-bottom: 10px;
   }
-  
-  /* Recently funded section */
-  .recently-funded {
-    margin-top: 40px;
-  }
-  
+
   .recently-funded h3 {
-    font-size: 1.8rem;
-    margin-bottom: 20px;
+      font-size: 1.6rem;
   }
-  
-  .funded-items {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+}
+
+@media (max-width: 480px) {
+  .funding-text h2 {
+      font-size: 1.5rem;
   }
-  
+  .funding-section{
+    width: 100%;
+  }
+
+  .funding-text p {
+      font-size: 0.9rem;
+  }
+
+  .funding-button {
+      font-size: 1rem;
+      padding: 8px 16px;
+  }
+
+  .card {
+      /* padding: 15px; */
+      width: 100% !important;
+      display: none ; 
+      font-size: 0.9rem;
+  }
+
+  .recently-funded h3 {
+      font-size: 1.4rem;
+  }
+
   .funded-item {
-    background-color: #2c3e50;
-    border-radius: 10px;
-    padding: 15px;
-    margin: 10px;
-    text-align: center;
-    width: 100%;
-    height: 10%;
+      margin: 5px 0;
   }
-  
-  .funded-item img {
-    width: 100%;
-    height:100%;
-    border-radius: 5px;
-    margin-bottom: 10px;
-  
-  }
-  
-  .funded-item p {
-    margin: 5px 0;
-    font-size: 1rem;
-  }
-  
+}

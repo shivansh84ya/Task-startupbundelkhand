@@ -25,7 +25,7 @@ const Navbar = () => {
             <IoMenu />
           </button>
           <img src={Logo} alt="Startup Logo" className="logo" />
-          <button className="site-name">startupbundelkhand.com</button>
+          {/* <button className="site-name">startupbundelkhand.com</button> */}
         </div>
         <div className="navbar-center">
           {['EDUCATION', 'COMMUNITY', 'LIBRARY', 'PRODUCTS'].map((item, index) => (
