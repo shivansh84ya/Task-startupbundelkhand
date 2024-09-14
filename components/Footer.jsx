@@ -21,6 +21,7 @@ const Footer = () => {
           </ul>
         </div>
         <div className="footer-section">
+          
           <h3>COMMUNITY</h3>
           <ul>
             <li><a href="#">Founder Groups</a></li>
@@ -41,6 +42,7 @@ const Footer = () => {
           </ul>
         </div>
         <div className="footer-section">
+          
           <h3>COMPANY</h3>
           <ul>
             <li><a href="#">Products</a></li>
@@ -50,6 +52,7 @@ const Footer = () => {
           </ul>
         </div>
         <div className="footer-section">
+          
           <h3>LEGAL</h3>
           <ul>
             <li><a href="#">Terms of Service</a></li>
@@ -57,6 +60,7 @@ const Footer = () => {
           </ul>
         </div>
         <div className="footer-section">
+          
           <h3>FOLLOW</h3>
           <div className="social-icons">
             <a href="#"><FaFacebookF /></a>
@@ -67,6 +71,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-bottom">
+        
         <p>startups.com</p>
       </div>
     </footer>
